@@ -1,12 +1,18 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import DashboardHeader from "@/components/admission/DashboardHeader";
+import AdmissionForm from "@/components/admission/AdmissionForm";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-background">
+      <DashboardHeader />
+      
+      <main className="py-8 px-4 sm:px-6">
+        <AdmissionForm />
+      </main>
+
+      <footer className="py-6 px-4 text-center text-muted-foreground text-sm border-t">
+        <p>© {new Date().getFullYear()} Venkatesa School of Nursing. All rights reserved.</p>
+      </footer>
     </div>
   );
 };
